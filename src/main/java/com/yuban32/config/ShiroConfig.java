@@ -1,7 +1,9 @@
 package com.yuban32.config;
 
-import com.yuban32.shiro.AccountRealm;
-import com.yuban32.shiro.JwtFilter;
+import com.yuban32.Shiro.AccountRealm;
+import com.yuban32.Shiro.JwtFilter;
+import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
+import org.apache.shiro.mgt.DefaultSubjectDAO;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.mgt.SessionManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -20,6 +22,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+// Shiro 启用注解拦截器
 @Configuration
 public class ShiroConfig {
 
@@ -76,5 +79,6 @@ public class ShiroConfig {
         shiroFilter.setFilterChainDefinitionMap(filterMap);
         return shiroFilter;
     }
+
 
 }

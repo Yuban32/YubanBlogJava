@@ -8,8 +8,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author 关注公众号：MarkerHub
- * @since 2021-12-09
+ * @author Yuban32
+ * @since 2021-12-10
  */
 public interface BlogMapper extends BaseMapper<Blog> {
 

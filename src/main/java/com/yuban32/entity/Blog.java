@@ -14,8 +14,8 @@ import lombok.experimental.Accessors;
  * 
  * </p>
  *
- * @author 关注公众号：MarkerHub
- * @since 2021-12-09
+ * @author Yuban32
+ * @since 2021-12-10
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -36,9 +36,9 @@ public class Blog implements Serializable {
 
     private String content;
 
-    private LocalDateTime created;
-
     private Integer status;
+
+    private LocalDateTime created;
 
 
 }

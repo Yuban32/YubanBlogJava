@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
  *  服务实现类
  * </p>
  *
- * @author 关注公众号：MarkerHub
- * @since 2021-12-09
+ * @author Yuban32
+ * @since 2021-12-10
  */
 @Service
 public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements BlogService {

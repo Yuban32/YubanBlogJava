@@ -1,9 +1,18 @@
 package com.yuban32.Shiro;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
+@Data
 public class AccountProfile implements Serializable {
-    private long id;
+
+    private Long id;
+
     private String username;
+
     private String avatar;
+
+    private String email;
+
 }

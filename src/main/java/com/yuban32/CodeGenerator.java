@@ -56,8 +56,8 @@ public class CodeGenerator {
         dsc.setUrl("jdbc:mysql://localhost:3306/vue_blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
-        dsc.setUsername("root");
-        dsc.setPassword("root");
+        dsc.setUsername("vue_blog");
+        dsc.setPassword("yuban32admin");
         mpg.setDataSource(dsc);
 
         // 包配置

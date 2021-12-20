@@ -46,6 +46,6 @@ public class Blog implements Serializable {
     private Integer status;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDateTime created;
-
+    private String image;
 
 }

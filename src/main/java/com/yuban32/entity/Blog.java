@@ -1,8 +1,7 @@
 package com.yuban32.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
 
@@ -46,6 +45,9 @@ public class Blog implements Serializable {
     private Integer status;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDateTime created;
-    private String image;
 
+    private String image;
+    @TableLogic
+    @TableField(select = false)
+    private Integer deleted;
 }

@@ -73,11 +73,10 @@ public class BlogController {
         return Result.succ(null);
     }
     @RequiresAuthentication
-    @PostMapping("/blog/delete/{id}")
-    public Result delete(@PathVariable(name = "id") Long id) {
+    @PostMapping("/blog/delete")
+    public Result delete(@RequestBody Blog id) {
         boolean blog = blogService.removeById(id);
         Assert.notNull(blog, "该博客已被删除");
-
         return Result.succ(blog);
     }
 

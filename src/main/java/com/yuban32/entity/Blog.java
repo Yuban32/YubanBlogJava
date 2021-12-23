@@ -50,4 +50,6 @@ public class Blog implements Serializable {
     @TableLogic
     @TableField(select = false)
     private Integer deleted;
+
+    private String tag;
 }

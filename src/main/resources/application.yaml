@@ -7,9 +7,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://43.129.76.216:3306/vue_blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: vue_blog
-    password: yuban32admin
+    url: 
+    username: 
+    password: 
 
 mybatis-plus:
   configuration:
@@ -27,11 +27,11 @@ mybatis-plus:
 shiro-redis:
   enabled: true
   redis-manager:
-    host: 43.129.76.216:6379
+    host: 
 yuban32:
   jwt:
     # 加密秘钥
-    secret: f4e2e52034348f86b67cde581c0f9eb5
+    secret: 
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
